@@ -1,11 +1,13 @@
 import './App.css'
+import Converter from './components/Converter'
 
 function App() {
 
   return (
     <>
       <div>
-        <h2>Hello Ruban!! This is IMG to PDF Converter</h2>
+        <h1>JPG to PDF Converter</h1>
+        <Converter />
       </div>
     </>
   )
