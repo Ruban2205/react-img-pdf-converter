@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 const Upload = ({ onDrop }) => {
@@ -9,11 +9,11 @@ const Upload = ({ onDrop }) => {
     const { getRootProps, getInputProps } = useDropzone({ onDrop: onDropCallback });
 
     return (
-        <div {...getRootProps()} style={{ border: '2px dashed #ccc', padding: '20px', textAlign: 'center' }}>
+        <div {...getRootProps()} className="border-2 border-dashed border-gray-300 p-6 rounded-lg cursor-pointer hover:border-gray-400 transition-colors">
             <input {...getInputProps()} />
-            <p>Drag & drop some files here, or click to select files</p>
+            <p className="text-gray-500">Drag & drop some files here, or click to select files</p>
         </div>
     );
 };
 
-export default Upload; 
+export default Upload;

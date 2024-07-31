@@ -1,16 +1,13 @@
-import './App.css'
-import Converter from './components/Converter'
+import React from 'react';
+import Converter from './components/Converter';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div>
-        <h1>JPG to PDF Converter</h1>
-        <Converter />
-      </div>
-    </>
-  )
-}
+    <div className="min-h-screen bg-gray-100 py-10">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">JPG to PDF Converter</h1>
+      <Converter />
+    </div>
+  );
+};
 
-export default App
+export default App;
